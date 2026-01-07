@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance Predictor</title>
+</head>
+<body>
+    <h2>Student Performance Predictor</h2>
+
+    <form method="POST">
+
+        <label>Age:</label><br>
+        <input type="number" name="age" min="15" max="22" required><br><br>
+
+        <label>Study Time (1–4):</label><br>
+        <input type="number" name="studytime" min="1" max="4" required><br><br>
+
+        <label>Past Failures (0–3):</label><br>
+        <input type="number" name="failures" min="0" max="3" required><br><br>
+
+        <label>Absences:</label><br>
+        <input type="number" name="absences" min="0" required><br><br>
+
+        <label>Mother's Education (0–4):</label><br>
+        <input type="number" name="Medu" min="0" max="4" required><br><br>
+
+        <label>Father's Education (0–4):</label><br>
+        <input type="number" name="Fedu" min="0" max="4" required><br><br>
+
+        <label>Travel Time (1–4):</label><br>
+        <input type="number" name="traveltime" min="1" max="4" required><br><br>
+
+        <label>Workday Alcohol Consumption (1–5):</label><br>
+        <input type="number" name="Dalc" min="1" max="5" required><br><br>
+
+        <label>Weekend Alcohol Consumption (1–5):</label><br>
+        <input type="number" name="Walc" min="1" max="5" required><br><br>
+
+        <label>Health Status (1–5):</label><br>
+        <input type="number" name="health" min="1" max="5" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Prediction Result:</h3>
+        <p>{{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
