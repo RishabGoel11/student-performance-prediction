@@ -74,6 +74,21 @@ The trained and tuned model was saved using `pickle` for reuse and deployment.
 
 ---
 
+## 🌐 Live Demo
+
+- Frontend (Lovable): https://<your-lovable-url>
+- Backend API (Render): https://<your-render-url>
+
+---
+
+## 🏗 System Architecture
+
+Lovable Frontend → Flask API → Machine Learning Model (Logistic Regression)
+
+The backend is deployed as an API-only service and the frontend consumes it via HTTP requests.
+
+---
+
 ## 🚀 Future Improvements
 - Try tree-based models (Random Forest, XGBoost)
 - Handle outliers in absences
