@@ -1,5 +1,17 @@
 # Student Performance Prediction (Pass/Fail)
 
+## 🌐 Live Demo
+
+- Frontend (Lovable): https://student-ml-predictor.lovable.app
+- Backend API (Render): https://student-performance-prediction-kva6.onrender.com
+
+## 🏗 Architecture
+
+Lovable Frontend → Flask API → Machine Learning Model (Logistic Regression)
+
+This project is deployed as an API-only backend with a separate frontend interface.
+
+
 ## 📌 Problem Statement
 The goal of this project is to predict whether a student will **pass or fail** based on academic, demographic, and socio-economic factors.  
 This is formulated as a **binary classification problem**.
@@ -71,21 +83,6 @@ A scikit-learn Pipeline was used to guarantee consistency between training and i
 
 ## 💾 Model Persistence
 The trained and tuned model was saved using `pickle` for reuse and deployment.
-
----
-
-## 🌐 Live Demo
-
-- Frontend (Lovable): https://<your-lovable-url>
-- Backend API (Render): https://<your-render-url>
-
----
-
-## 🏗 System Architecture
-
-Lovable Frontend → Flask API → Machine Learning Model (Logistic Regression)
-
-The backend is deployed as an API-only service and the frontend consumes it via HTTP requests.
 
 ---
 
